@@ -1,17 +1,30 @@
+import AdvancedCalculator from "@/components/AdvancedCalculator";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/shadcnui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Advanced | Calculator App",
-  description: "Advanced Calculator App",
+  title: "Advaanced | Calculator App",
+  description: "Advaanced Calculator App",
 };
 
 const page = () => {
   return (
     <section className="grid h-[90dvh] place-items-center">
-      <div className="space-y-2 text-center">
-        <h1 className="text-5xl font-semibold">Nextjs Starter Frontend</h1>
-        <h2 className="text-3xl">Production grade Next.js starter template</h2>
-      </div>
+      <Card className="w-lg">
+        <CardHeader>
+          <CardTitle className="grid place-items-center text-2xl">
+            Advaanced Calculator
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <AdvancedCalculator />
+        </CardContent>
+      </Card>
     </section>
   );
 };
