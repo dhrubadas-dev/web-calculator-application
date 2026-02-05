@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ThemeToggleButton from "../ThemeToggleButton";
+import { AuroraText } from "../shadcnui/aurora-text";
 
 const Header = () => {
   return (
@@ -8,11 +9,11 @@ const Header = () => {
       aria-label="app-header">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         <Link href={"/"}>
-          <h1
-            className="text-2xl font-semibold"
+          <AuroraText
+            className="text-3xl font-bold"
             aria-label="App Name">
             CalculatorApp
-          </h1>
+          </AuroraText>
         </Link>
 
         <nav className="flex items-center gap-4">
